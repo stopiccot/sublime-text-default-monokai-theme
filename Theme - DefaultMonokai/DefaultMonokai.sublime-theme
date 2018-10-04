@@ -2,8 +2,17 @@
     // Side Bar
     {
         "class": "sidebar_container",
-        "layer0.tint": [235, 237, 239],
+
+        // Background
+        "layer0.tint": [40, 41, 35],
         "layer0.opacity": 1.0,
+
+        // Border
+        "layer1.tint": [71, 72, 66],
+        "layer1.inner_margin": [0, 0, 1, 0],
+        "layer1.opacity": 1.0,
+        "layer1.draw_center": false,
+
         "content_margin": 0,
     },
     {
@@ -34,26 +43,24 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.tint": [199, 203, 209],
+        "layer0.tint": [62, 61, 50],
         "layer0.opacity": 1.0,
     },
     {
         "class": "sidebar_heading",
-        "fg": [128, 128, 128],
+        "fg": [208, 208, 195],
         "font.size": 13,
-        "font.bold": true,
-        "shadow_color": [255, 255, 255, 0.36],
-        "shadow_offset": [0, 1]
+        "font.bold": true
     },
     {
         "class": "sidebar_label",
-        "fg": [48, 48, 48],
+        "fg": [208, 208, 195],
         "font.size": 12
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "fg": [24, 24, 24],
+        "fg": [208, 208, 195],
     },
     {
         "class": "sidebar_label",
@@ -64,7 +71,7 @@
     // Open Files Icons
     {
         "class": "close_button",
-        "layer0.texture": "Theme - Default/common/light/open_file_close.png",
+        "layer0.texture": "Theme - Default/common/dark/open_file_close.png",
         "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
         "layer0.tint": [255, 255, 255],
         "content_margin": [8, 8],
@@ -77,24 +84,24 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Default/common/light/open_file_dirty.png",
+        "layer0.texture": "Theme - Default/common/dark/open_file_dirty.png",
     },
     {
         "class": "close_button",
         "attributes": ["hover", "dirty"],
-        "layer0.texture": "Theme - Default/common/light/open_file_close.png",
+        "layer0.texture": "Theme - Default/common/dark/open_file_close.png",
     },
     // Folder & File Icons
     {
         "class": "disclosure_button_control",
-        "layer0.texture": "Theme - Default/common/light/disclosure_unexpanded.png",
+        "layer0.texture": "Theme - Default/common/dark/disclosure_unexpanded.png",
         "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Default/common/light/disclosure_expanded.png",
+        "layer0.texture": "Theme - Default/common/dark/disclosure_expanded.png",
     },
     {
         "class": "disclosure_button_control",
@@ -103,14 +110,14 @@
     },
     {
         "class": "icon_folder",
-        "layer0.texture": "Theme - Default/common/light/folder_closed.png",
+        "layer0.texture": "Theme - Default/common/dark/folder_closed.png",
         "layer0.opacity": 0.3,
         "content_margin": [9, 8]
     },
     {
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Theme - Default/common/light/folder_open.png",
+        "layer0.texture": "Theme - Default/common/dark/folder_open.png",
         "layer0.opacity": 0.3,
         "content_margin": [9, 8]
     },
@@ -120,26 +127,26 @@
         {
             "keyframes":
             [
-                "Theme - Default/common/light/folder_loading_01.png",
-                "Theme - Default/common/light/folder_loading_02.png",
-                "Theme - Default/common/light/folder_loading_03.png",
-                "Theme - Default/common/light/folder_loading_04.png",
-                "Theme - Default/common/light/folder_loading_05.png",
-                "Theme - Default/common/light/folder_loading_06.png",
-                "Theme - Default/common/light/folder_loading_07.png",
-                "Theme - Default/common/light/folder_loading_08.png",
-                "Theme - Default/common/light/folder_loading_09.png",
-                "Theme - Default/common/light/folder_loading_10.png",
-                "Theme - Default/common/light/folder_loading_11.png",
-                "Theme - Default/common/light/folder_loading_12.png",
-                "Theme - Default/common/light/folder_loading_13.png",
-                "Theme - Default/common/light/folder_loading_14.png",
-                "Theme - Default/common/light/folder_loading_15.png",
-                "Theme - Default/common/light/folder_loading_16.png",
-                "Theme - Default/common/light/folder_loading_17.png",
-                "Theme - Default/common/light/folder_loading_18.png",
-                "Theme - Default/common/light/folder_loading_19.png",
-                "Theme - Default/common/light/folder_loading_20.png",
+                "Theme - Default/common/dark/folder_loading_01.png",
+                "Theme - Default/common/dark/folder_loading_02.png",
+                "Theme - Default/common/dark/folder_loading_03.png",
+                "Theme - Default/common/dark/folder_loading_04.png",
+                "Theme - Default/common/dark/folder_loading_05.png",
+                "Theme - Default/common/dark/folder_loading_06.png",
+                "Theme - Default/common/dark/folder_loading_07.png",
+                "Theme - Default/common/dark/folder_loading_08.png",
+                "Theme - Default/common/dark/folder_loading_09.png",
+                "Theme - Default/common/dark/folder_loading_10.png",
+                "Theme - Default/common/dark/folder_loading_11.png",
+                "Theme - Default/common/dark/folder_loading_12.png",
+                "Theme - Default/common/dark/folder_loading_13.png",
+                "Theme - Default/common/dark/folder_loading_14.png",
+                "Theme - Default/common/dark/folder_loading_15.png",
+                "Theme - Default/common/dark/folder_loading_16.png",
+                "Theme - Default/common/dark/folder_loading_17.png",
+                "Theme - Default/common/dark/folder_loading_18.png",
+                "Theme - Default/common/dark/folder_loading_19.png",
+                "Theme - Default/common/dark/folder_loading_20.png",
             ],
             "loop": true,
             "frame_time": 0.08,
@@ -149,7 +156,7 @@
     },
     {
         "class": "icon_folder_dup",
-        "layer0.texture": "Theme - Default/common/light/symlink.png",
+        "layer0.texture": "Theme - Default/common/dark/symlink.png",
         "layer0.opacity": 0.3,
         "content_margin": [9, 8]
     },
@@ -1030,13 +1037,22 @@
     // Status Bar
     {
         "class": "status_bar",
-        "layer0.tint": [171, 177, 186],
+        
+        // Background
+        "layer0.tint": [40, 41, 35],
         "layer0.opacity": 1.0,
+
+        // Border
+        "layer1.tint": [71, 72, 66],
+        "layer1.inner_margin": [0, 1, 0, 0],
+        "layer1.opacity": 1.0,
+        "layer1.draw_center": false,
+
         "content_margin": [8, 0, 8, 0]
     },
     {
         "class": "panel_button_control",
-        "layer0.texture": "Theme - Default/common/light/panels_button.png",
+        "layer0.texture": "Theme - Default/common/dark/panels_button.png",
         "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
         "content_margin": [12, 11]
     },
@@ -1058,7 +1074,6 @@
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
         "font.size": 11,
-        "shadow_color": [255, 255, 255, 0.18],
-        "shadow_offset": [0, 1]
+        "fg": [208, 208, 195]
     },
 ]

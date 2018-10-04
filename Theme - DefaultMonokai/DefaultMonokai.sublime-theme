@@ -412,20 +412,27 @@
     // Quick Panel
     {
         "class": "overlay_control",
-        "layer0.tint": [235, 237, 239],
+        "layer0.tint": [40, 41, 35],
         "layer0.opacity": 1.0,
-        "content_margin": 4
+
+        // Border
+        "layer1.tint": [71, 72, 66],
+        "layer1.inner_margin": [1, 1, 1, 1],
+        "layer1.opacity": 1.0,
+        "layer1.draw_center": false,
+
+        "content_margin": 1
     },
     {
         "class": "quick_panel",
         "row_padding": 6,
-        "layer0.tint": [235, 237, 239],
+        "layer0.tint": [40, 41, 35],
         "layer0.opacity": 1.0,
         "dark_content": false,
     },
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [199, 203, 209],
+        "layer0.tint": [62, 61, 50],
         "layer0.opacity": 0.0
     },
     {
@@ -435,7 +442,7 @@
     },
     {
         "class": "quick_panel_row",
-        "layer0.tint": [199, 203, 209],
+        "layer0.tint": [62, 61, 50],
         "layer0.opacity": 0.0
     },
     {
@@ -445,10 +452,10 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": [69, 74, 85],
-        "match_fg": [0, 0, 0],
-        "selected_fg": [46, 49, 56],
-        "selected_match_fg": [0, 0, 0]
+        "fg": [208, 208, 195],
+        "match_fg": [255, 255, 255],
+        "selected_fg": [208, 208, 195],
+        "selected_match_fg": [255, 255, 255]
     },
     {
         "class": "quick_panel_label",
@@ -802,7 +809,7 @@
     {
         "class": "text_line_control",
         "layer0.texture": "Theme - Default/common/light/input.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 0.0,
         "layer0.inner_margin": 4,
         "content_margin": 4
     },
